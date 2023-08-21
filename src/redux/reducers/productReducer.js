@@ -12,7 +12,8 @@ const productSlice = createSlice({
       state.products = action.payload;
     },
     add: (state, action) => {
-      state.products.push(action.payload);
+      const prod = { ...action.payload, id: state.products.length + 1 };
+      state.products.push(prod);
     },
     edit: (state, action) => {
       state.products = state.products.map((product) => {
