@@ -3,6 +3,7 @@ import styles from "../styles/addProduct.module.css";
 import { useState } from "react";
 import { action } from "../redux/reducers/productReducer";
 import { useNavigate } from "react-router-dom";
+import toast from "react-hot-toast";
 
 const AddProduct = () => {
   const dispatch = useDispatch();
@@ -15,6 +16,10 @@ const AddProduct = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     dispatch(action.add({ name, description, rating, price, img }));
+    toast.success("Product added successfully", {
+      duration: 4000,
+      position: "top-center",
+    });
     navigate("/");
   };
   return (

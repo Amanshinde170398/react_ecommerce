@@ -7,6 +7,7 @@ import {
   ProductDetail,
   CartList,
 } from "./index";
+import { Toaster } from "react-hot-toast";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route exact path="/product-detail/:id" Component={ProductDetail} />
         <Route exact path="/product/carts" Component={CartList} />
       </Routes>
+      <Toaster />
     </div>
   );
 }

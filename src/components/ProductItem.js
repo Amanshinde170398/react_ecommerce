@@ -4,11 +4,16 @@ import { useDispatch } from "react-redux";
 import { action } from "../redux/reducers/productReducer";
 import { cartAction } from "../redux/reducers/cartReducer";
 import { Link } from "react-router-dom";
+import toast from "react-hot-toast";
 
 const ProductItem = ({ index, product }) => {
   const dispatch = useDispatch();
   const handleDelete = (id) => {
     dispatch(action.delete(id));
+    toast.success("Product remove successfully", {
+      duration: 4000,
+      position: "top-center",
+    });
   };
 
   const handleAddToCart = (prod) => {

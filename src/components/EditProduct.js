@@ -4,6 +4,7 @@ import { productSelector } from "../redux/reducers/productReducer";
 import { useState } from "react";
 import { action } from "../redux/reducers/productReducer";
 import styles from "../styles/addProduct.module.css";
+import toast from "react-hot-toast";
 
 const EditProduct = () => {
   const dispatch = useDispatch();
@@ -34,6 +35,10 @@ const EditProduct = () => {
         img,
       })
     );
+    toast.success("Product edited successfully", {
+      duration: 4000,
+      position: "top-center",
+    });
     navigate("/");
   };
   return (
