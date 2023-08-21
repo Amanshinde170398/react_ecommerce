@@ -1,0 +1,16 @@
+.productForm {
+  width: 80%;
+  margin: 3rem auto;
+  background-color: #fff;
+  padding: 2rem 3rem;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+}
+
+.productForm label {
+  font-weight: 600;
+  /* color: black; */
+}
+.productForm [type="submit"] {
+  font-weight: 600;
+}

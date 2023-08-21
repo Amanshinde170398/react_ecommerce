@@ -1,0 +1,28 @@
+.productDetailCont {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+  height: 100vh;
+  padding: 1rem;
+}
+
+.productDetail {
+  /* height: 100%; */
+  width: 70%;
+  background-color: #fff;
+  min-height: 20rem;
+  max-height: 21rem;
+  padding: 2rem;
+  border-radius: 2rem;
+  /* overflow: scroll; */
+}
+/* .imgContainer img {
+  width: 70%;
+  height: 20%;
+} */
+
+.productTag {
+  font-size: 1.2rem;
+  font-weight: 600;
+}

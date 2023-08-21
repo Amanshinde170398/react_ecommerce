@@ -1,0 +1,36 @@
+.productListContainer {
+  padding: 1rem 3rem;
+}
+.productItemContainer {
+  padding: 1.5rem;
+  background-color: #fff;
+  display: flex;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.productImg img {
+  border-radius: 10px;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+.price {
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.prodDescription {
+  width: 52rem;
+  text-align: justify;
+}
+
+.editProduct {
+  float: right;
+}
